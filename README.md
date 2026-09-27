@@ -87,7 +87,9 @@ Open index.html in any web browser or use VS Code Live Server.
 ## Usage
 1. Open https://rvyei.github.io/MY-PORTFOLIO/ in any desktop or mobile browser.
 2. Use the sticky header navigation to jump between Home, About, Skills, and Contact pages.
-3. Click on any language card (C++, HTML, or CSS) on the skills section to view dedicated code details and documentation.
-4. Click the centered ← Back to Home button on sub-pages to return to the main dashboard.
+3. Hover on any language card (C++, HTML, or CSS) on the skills section to view dedicated code details and documentation.
 
 ## Challenges & Key Learnings
+- CSS Layout Isolation: Separated global body width constraints from full-width structural containers (.site-header) to fix sticky header positioning and scaling bugs.
+- Selector Specificity: Swapped generic a selectors for targeted classes (.nav-item) to prevent buttons from interfering with list and header link styles.
+- Relative Section Hash Linking: Configured path links (index.html#skills) to ensure section jumps work consistently whether navigating from the home page or a sub-page.
